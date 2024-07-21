@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>HM41</title>
+  </head>
+  <body>
+    <!--Selector for teg-->
+
+    <h1>1.це правило застосовуємо до тега &lt;h1&gt;</h1>
+
+    <!--Selector for class-->
+
+    <div>
+      <h2 class="element-two">2.цей параграф буде иншого кольору</h2>
+    </div>
+
+    <!--Selector for id-->
+    <div></div>
+
+    <div>
+      <h3 id="uniqeid">3.це правило застосовуємо до uniqe id</h3>
+    </div>
+
+    <!--Selector for attribute-->
+
+    <div class="google">
+      <a target="_blank" href="https://translate.google.com/"
+        >Google translate</a
+      >
+      <a target="_blank" href="https://news.google.com/">Google News</a>
+      <a target="_blank" href="https://www.google.com/maps/">Google maps</a>
+    </div>
+
+    <!--Context Selector-->
+
+    <div>
+      <p>Цей абзац безпосередньо в div.</p>
+      <section>
+        <p>
+          Контекстні селектори <em>дозволяють нам</em> змінювати стилі елементів
+          у залежності від їх контексту на сторінці.
+        </p>
+      </section>
+    </div>
+
+    <!--Child selector-->
+
+    <div class="child">
+      <p>Цей абзац безпосередньо в div.</p>
+      <section>
+        <p>
+          Дочірні селектори у CSS використовуються нами для вибору елементів,
+          які є безпосередньо дочірніми для певного батьківського елемента.
+        </p>
+      </section>
+      <section>
+        <p>
+          Дочірні селектори <strong>корисні, коли ми хочемо</strong> визначити
+          стилі для елементів, що знаходяться на певному рівні.
+        </p>
+      </section>
+    </div>
+
+    <!--Adjacent sibling selectors-->
+
+    <div>
+      <h4>Послідовність селекторів (перший).</h4>
+      <ol>
+        <li>Селектор a + b {} у CSS є селектором безпосередніх братів.</li>
+        <li>
+          Він використовується для застосування стилів до елемента b, який
+          безпосередньо слідує за елементом a та знаходиться з ним на одному
+          рівні в DOM-дереві.
+        </li>
+        <li>Послідовність селекторів (всі)</li>
+        <li>
+          Використовується для стилізації групи елементів, які мають спільного
+          "попередника" в HTML-структурі.
+        </li>
+      </ol>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </div>
+  </body>
+</html>

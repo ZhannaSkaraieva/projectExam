@@ -1,0 +1,57 @@
+/*Selector for teg*/
+
+h1 {
+  color: brown;
+}
+
+/*Selector for class*/
+
+.element-two {
+  color: blueviolet;
+}
+
+/*Selector for id*/
+
+#uniqeid {
+  color: blue;
+}
+
+/*Selector for attribute*/
+
+.google [href*="translate"] {
+  color: aquamarine;
+  font-weight: bold;
+}
+
+.google [ href^="https://www.google.com"]
+{
+  color: rgb(249, 4, 212);
+}
+
+/*Context Selector*/
+
+div p {
+  color: rgb(6, 14, 123);
+}
+
+section p em {
+  font-style: italic;
+  color: rgb(171, 226, 43);
+}
+
+/*Child selector*/
+
+.child section > p {
+  color: rgb(4, 88, 6);
+}
+
+.child p > strong {
+  color: rgb(6, 123, 138);
+  font-style: italic;
+}
+
+/*Adjacent sibling selectors*/
+
+h4 + ol {
+  color: red;
+}
